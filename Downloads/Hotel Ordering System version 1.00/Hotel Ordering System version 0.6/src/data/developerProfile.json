@@ -1,0 +1,32 @@
+{
+  "name": "Developer Name",
+  "company": "ntes",
+  "companyWebsite": "https://ntes-main-website.onrender.com/",
+  "profilePictureUrl": "file:///C:/Users/User/Downloads/juwii_developer_profile/build/assets/profile%20picture.jpg",
+  "profilePicturePath": "C:\\Users\\User\\Downloads\\juwii_developer_profile\\build\\assets\\profile picture.jpg",
+  "email": "developer@ntes.com",
+  "location": "South Africa",
+  "bio": "Full-stack developer with expertise in modern web technologies, specializing in React, TypeScript, and cloud-native applications. Passionate about creating efficient and user-friendly solutions for hospitality and ordering systems.",
+  "github": "https://github.com/juwiijones984",
+  "portfolio": "https://ntes-main-website.onrender.com/",
+  "skills": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Firebase",
+    "Supabase",
+    "PostgreSQL",
+    "Tailwind CSS",
+    "UI/UX Design",
+    "Progressive Web Apps"
+  ],
+  "projects": [
+    {
+      "name": "Egumeni Eats - Hotel Ordering System",
+      "description": "A comprehensive food ordering system for University of Mpumalanga's Tfokomala Hotel with role-based dashboards for admin, kitchen, delivery, cashier, and stores management.",
+      "technologies": ["React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS"],
+      "url": "https://ntes-main-website.onrender.com/"
+    }
+  ],
+  "updatedAt": "2025-12-10"
+}

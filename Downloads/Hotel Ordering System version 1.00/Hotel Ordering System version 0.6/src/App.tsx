@@ -20,6 +20,7 @@ const KitchenDashboard = lazy(() => import('./components/KitchenDashboard'))
 const DeliveryDashboard = lazy(() => import('./components/DeliveryDashboard'))
 const CashierDashboard = lazy(() => import('./components/CashierDashboard'))
 const StoresDashboard = lazy(() => import('./components/StoresDashboard'))
+const DeveloperProfile = lazy(() => import('./components/DeveloperProfile'))
 
 // University of Mpumalanga branded loading component
 const AppLoader = ({ message = "Loading..." }) => (
@@ -137,10 +138,21 @@ function App() {
   }
 
   // Route based on authentication state
+  // Check for developer profile route
+  const currentPath = window.location.pathname
+  if (currentPath === '/developer-profile' || currentPath.includes('developer-profile')) {
+    return (
+      <Suspense fallback={<AppLoader message="Loading Developer Profile..." />}>
+        <div className="bg-white">
+          <DeveloperProfile />
+        </div>
+      </Suspense>
+    )
+  }
+
   // If no user at all, show landing page
   if (!user) {
     // Check if user clicked a login link (simple URL-based routing)
-    const currentPath = window.location.pathname
     if (currentPath === '/login') {
       return <Login />
     }
